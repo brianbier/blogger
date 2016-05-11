@@ -12,7 +12,7 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-    <a href="#" class="name">Blogger</a>
+    <%= link_to "Blogger", root_path, class: "name" %>
     <nav>
       <%= link_to "Articles", posts_path %>
       <a href="#">Projects</a>
@@ -22,5 +22,15 @@
 
 <%= yield %>
 
+  <footer id="main_footer">
+    <p class="copyright">&copy; 2016 Blogger</p>
+    <nav>
+      <a href="#"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </nav>
+  </footer>
 </body>
 </html>

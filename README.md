@@ -1,10 +1,10 @@
-# What are we building?
+# What I am building?
 We are building a blogger site for multiple users
 
-## Who are we building it for?
+## Who I am building it for?
 We are building it for ourself but also the community as a whole to share what we learn. Show potential Employers what we have to offer
 
-## What features do we need to have?
+## What features do I need to have?
 - Posts
      - create/edit/destroy
      - Markdown
@@ -51,7 +51,7 @@ We are building it for ourself but also the community as a whole to share what w
      device manages this part.
 
 
-## Think about the pages we need in our app
+## Think about the pages I need in our app
 
 Home
 - Posts#index

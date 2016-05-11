@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 about homepage_content">
+      <h2>About</h2>
+      <hr>
+      <p>Blogger is a site for people who love to speak their mind. I designed blogger for those who are designers &amp; developers living the programming life.</p>
+      <p> Programming is fun  but time consuming. Blogging your thoughts and sharing your ideas is a great skill and by doing so often makes you a better person to the community.</p>
+      <p>Share your thoughts, imagination, projects and life with us all.</p>
+    </div>
+    <div class="col-2 homepage_content">
+      <h2>Blogger Community Thoughts</h2>
+      <hr>
+      <% @post.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post %></a></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d %Y")%></p>
+      <% end %>
+    </div>
+    <div class="col-3 homepage_content">
+      <h2>Blogger favorite projects</h2>
+      <hr>
+      <h3><a href="#">Unicast</a></h3>
+      <p class="date">Friday, May 14, 2015</p>
+      <h3><a href="#">2048 Javascript</a></h3>
+      <p class="date">Friday, May 14, 2015</p>
+      <h3><a href="#">Personal Website</a></h3>
+      <p class="date">Friday, May 14, 2015</p>
+    </div>
+  </div>

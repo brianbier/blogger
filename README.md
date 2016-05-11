@@ -20,7 +20,7 @@ We are building it for ourself but also the community as a whole to share what w
 - User
      - Using Device
 
-User Stories
+## User Stories
 - As a user, I want to be able to create post so that I can share what I am learning on my blog
 - As a user, I want to be able to edit and destroy post sot that I can manage my blog.
 - As a user, I want to be able to write posts in markdown format so that it is easy for me to write posts.
@@ -29,33 +29,30 @@ User Stories
 - As a user, I want to be able to have visitors contact me through a form on my site.
 - As a user, I want visitors to leave comments on my posts.
 
-### DATA MODELING
+## DATA MODELING
 
-**Model**
+###Models
 
-Post
-
+**Post**
      Table
      - title:string
      - content:string
 
-Project
-
+**Project**
      Table
      - title:string
      - description:text
      - link:string
 
-User
-
+**User**
      device manages this part.
 
 
 ## Think about the pages we need in our app
 
 Home
-Posts#index
-Posts#Show
-Projects#index
-Projects#show
-Contact
+- Posts#index
+- Posts#Show
+- Projects#index
+- Projects#show
+- Contact

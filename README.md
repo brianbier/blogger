@@ -34,17 +34,20 @@ We are building it for ourself but also the community as a whole to share what w
 ###Models
 
 **Post**
+
      Table
      - title:string
      - content:string
 
 **Project**
+
      Table
      - title:string
      - description:text
      - link:string
 
 **User**
+
      device manages this part.
 
 

@@ -28,6 +28,8 @@ gem 'bcrypt'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem 'friendly_id', '~> 5.1'
+gem 'will_paginate', '~> 3.1'
+
 # Pry for the console 
 gem 'pry-rails', :group => :development
 

@@ -39,6 +39,22 @@ body{
 .hidden{
   display: none;
 }
+
+.notice{
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid $border;
+  color: #35d37c;
+}
+
+.alert{
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid $border;
+  color: #ff0000;
+}
+
+
 h1,h2,h3,h4,h5,h6,p,ul,li{
   color:$dark;
 }

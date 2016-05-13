@@ -31,6 +31,8 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
+
+gem 'devise', '~> 3.5', '>= 3.5.6'
 # Pry for the console 
 gem 'pry-rails', :group => :development
 

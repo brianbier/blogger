@@ -1,6 +1,13 @@
 # What I am building?
 We are building a blogger site for multiple users
 
+
+##Technologies/Gems
+- Ruby on Rails
+- [pygments.rb gem](https://github.com/tmm1/pygments.rb)( It is a syntax highlighter to Ruby)
+- [friendly_id gem](https://github.com/norman/friendly_id)( It allows you to create pretty URL’s and work with human-friendly strings)
+- [redcarpet gem](https://github.com/vmg/redcarpet)( Redcarpet is a Ruby library for Markdown processing)
+
 ## Who I am building it for?
 We are building it for ourself but also the community as a whole to share what we learn. Show potential Employers what we have to offer
 

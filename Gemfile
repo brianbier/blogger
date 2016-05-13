@@ -30,6 +30,7 @@ gem 'pygments.rb'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # Pry for the console 
 gem 'pry-rails', :group => :development
 

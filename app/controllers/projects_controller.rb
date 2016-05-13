@@ -22,6 +22,23 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    @project.slug = params[:project][:title].gsub(/\s+/,'-')
+      if @project.update project_params
+        redirect_to @project, notice: "Your project was updated!"
+      else
+        render 'edit'
+      end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path
+  end
+
 
   private
 

@@ -10,6 +10,7 @@ We are building a blogger site for multiple users
 - [redcarpet gem](https://github.com/vmg/redcarpet)( Redcarpet is a Ruby library for Markdown processing)
 - [mail_form gem](https://github.com/plataformatec/mail_form)( Send e-mail straight from forms in Rails with I18n, validations, attachments and request information.)
 - [SendGrid Heroku Add on](https://elements.heroku.com/addons/sendgrid)( Email Delivery. Simplified.)
+- [devise gem](https://github.com/plataformatec/devise)( Flexible and powerful authentication solution for Rails)
 
 ## Who I am building it for?
 We are building it for ourself but also the community as a whole to share what we learn. Show potential Employers what we have to offer

@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    @post.slug = params[:post][:title].gsub(/\s+/,'-')
     if @post.update post_params
       redirect_to @post, notice: "Your article was successfully updated!"
     else

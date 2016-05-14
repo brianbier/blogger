@@ -1,7 +1,7 @@
 # What I am building?
 We are building a blogger site for multiple users
 
-** Live Demo** [Blogger Site](https://glacial-spire-69935.herokuapp.com/)()
+**Live Demo** [Blogger Site](https://glacial-spire-69935.herokuapp.com/)
 
 ##Technologies/Gems
 - Ruby on Rails

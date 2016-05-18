@@ -13,18 +13,6 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
-.overlayer{
-  opacity: 0.6;
-  .background-image{
-    background:url("https://65.media.tumblr.com/56e15d82cbaf15faeeff933a1cbc48c8/tumblr_o1ybu8SwU51ubupxao1_1280.jpg") no-repeat center center;
-    background-size:cover;
-    height: 40rem;
-    position: relative;
-    top: -6rem;
-    z-index: -1;
-  }
-}
-
 .wrapper{
   width: 90%;
   margin: 0 auto;
@@ -126,6 +114,7 @@ hr{
   nav {
     float: right;
     padding-top: 1.3rem;
+
     a {
     color: $dark;
     text-decoration: none;

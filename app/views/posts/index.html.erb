@@ -1,5 +1,9 @@
   <h1 id="page_title">Recent Articles</h1>
-  
+    <% if user_signed_in? %>
+      <div id="admin_links">
+        <%= link_to "new Article", new_post_path %>
+      </div>
+    <% end %>
   <div id="post_wrapper" class="skinny_wrapper">
     <% @posts.each do |post| %>
     <div class="post">

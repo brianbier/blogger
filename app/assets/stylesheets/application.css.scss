@@ -17,6 +17,15 @@ body{
   font-family: 'Raleway', sans-serif;
   background-color: #F7F7F7;
 }
+::-moz-selection{
+  background-color:$metal;
+  color: $white;
+}
+
+::selection{
+  background-color:$metal;
+  color: $white;
+}
 
 .wrapper{
   width: 90%;

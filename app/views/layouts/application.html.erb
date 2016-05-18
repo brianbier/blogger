@@ -16,9 +16,8 @@
   <div class="background-image">
   <header id="main_navigation" class="clearfix">
     <%= link_to "Sasha Ostojic", root_path, class: "name" %>
-
     <nav>
-      <%= link_to "Articles", posts_path %>
+      <%= link_to "Articles", posts_path, class: "cool-link" %>
       <%= link_to "Projects", projects_path %>
       <%= link_to "Contact", new_contact_path %>
       <% if user_signed_in? %>
@@ -28,6 +27,7 @@
       <% end %>
     </nav>
   </header>
+    <p class="slogan slogan_padding"></p>
   </div>
 </div>
 <!-- <div class="overlayer">
@@ -52,5 +52,8 @@
       </a>
     </nav>
   </footer>
+  <div class="below_footer">
+    <p class="power_by"><%= link_to "Proudly powered by Brian Bier.", "http://www.brianbier.co/" %></p>
+  </div>
 </body>
 </html>

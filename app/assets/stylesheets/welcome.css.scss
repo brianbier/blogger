@@ -1,3 +1,4 @@
+$white: #FFFFFF;
 .col-1, .col-2, .col-3{
   float: left;
 }
@@ -8,7 +9,7 @@
 }
 
 .col-2,.col-3{
-  width: 27.5%;
+  width: 26.5%;
   padding: 0 2.5%;
 }
 
@@ -35,7 +36,7 @@
     color: $light;
   }
   p{
-    margin: 0 0 .75em 0;
+    margin: 0 0 .5em 0;
   }
 }
 .about{

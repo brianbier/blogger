@@ -1,12 +1,67 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #6D7993; 
+$white: #FFFFFF;
+$border: #E9E9E9;
+
 .overlayer{
-  opacity: 0.6;
+  opacity: 0.87;
   .background-image{
-    background:url("https://65.media.tumblr.com/56e15d82cbaf15faeeff933a1cbc48c8/tumblr_o1ybu8SwU51ubupxao1_1280.jpg") no-repeat center center;
-    height: 40rem;
+    background:url("new_york.jpeg") no-repeat center center;
+    height: 35rem;
     z-index: -1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  }
+  .slogan{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: $white;
+    padding: 8rem 10em;
+  }
+  .slogan:before{
+    content: "Exchanging & engaging ideas about economics, economic history & statistics"
+  }
+}
+#main_navigation {
+  padding: 1.3em 5%;
+  border-bottom: 1px solid $border;
+  .name {
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: 2px solid $border;
+    padding: 1rem;
+    text-decoration: none;
+    color: $white;
+    float: left;
+  }
+  nav {
+    float: right;
+    padding-top: 1.3rem;
+
+    a {
+    color: $white;
+    text-decoration: none;
+    position: relative;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+      &:hover:after{
+        width: 100%;
+      }
+    }
+    a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid $white;
+      transition: 0.4s;
+    }
   }
 }

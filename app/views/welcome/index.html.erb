@@ -1,14 +1,11 @@
-
 <div class="wrapper wrapper_padding clearfix">
     <div class="col-1 about homepage_content">
-      <h2>About</h2>
+      <h2>About Me</h2>
       <hr>
-      <p>Blogger is a site for people who love to speak their mind. I designed blogger for those who are designers &amp; developers living the programming life.</p>
-      <p> Programming is fun  but time consuming. Blogging your thoughts and sharing your ideas is a great skill and by doing so often makes you a better person to the community.</p>
-      <p>Share your thoughts, imagination, projects and life with us all.</p>
+      <p>Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.</p>
     </div>
     <div class="col-2 homepage_content">
-      <h2>Blogger Community Thoughts</h2>
+      <h2>Recent Articles</h2>
       <hr>
       <% @post.each do |post| %>
       <h3><%= link_to post.title, post %></h3>
@@ -16,7 +13,7 @@
       <% end %>
     </div>
     <div class="col-3 homepage_content">
-      <h2>Blogger Community Thoughts</h2>
+      <h2>Research papers</h2>
       <hr>
       <% @projects.each do |project| %>
       <h3><%= link_to project.title, project %></h3>
@@ -24,3 +21,5 @@
       <% end %>
     </div>
   </div>
+<div class="wrapper wrapper_padding clearfix">
+</div>

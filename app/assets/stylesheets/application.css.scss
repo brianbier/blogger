@@ -2,15 +2,20 @@
 
 $dark: #424652;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #6D7993; 
 $white: #FFFFFF;
 $border: #E9E9E9;
+$purple: #96858F;
+$navy: #6D7993;
+$metal: #9099A2;
+$paper: #F7F7F7;
 
 *{
   box-sizing: border-box;
 }
 body{
   font-family: 'Raleway', sans-serif;
+  background-color: #F7F7F7;
 }
 
 .wrapper{
@@ -102,7 +107,7 @@ hr{
   border-bottom: 1px solid $border;
   .name {
     font-weight: 700;
-    font-size: .8em;
+    font-size: 1em;
     letter-spacing: 5px;
     text-transform: uppercase;
     border: 2px solid $border;
@@ -118,23 +123,42 @@ hr{
     a {
     color: $dark;
     text-decoration: none;
+    position: relative;
     margin: 0 1rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
+      &:hover:after{
+        width: 100%;
+      }
+    }
+    a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid $dark;
+      transition: 0.4s;
     }
   }
 }
+
+
+
+
 
 #page_title{
   text-align: center;
   border-bottom: 1px solid $border;
   padding: 3em 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
+  
 }
 
 #main_footer{
- padding: 2.5em 5%;
+ padding: 2.9em 5%;
  border-top: 1px solid $border; 
+ background-color: $border;
    .copyright{
       float:left;
       font-size: .9em;
@@ -152,7 +176,24 @@ hr{
     }
   }
 }
-
+.below_footer{
+  background-color: $metal;
+  padding: 0.7em 0;
+  .power_by{
+      text-align: center;
+      font-weight: 400;
+      // padding-top: em;
+      margin-bottom: -5px;
+      a{
+        color: $border;
+        text-decoration: none;
+        font-style: italic;
+        &:hover{
+          color: $border;
+        }
+      }
+  }
+}
 input[type="text"], input[type="email"], input[type="password"], textarea{
   width: 100%;
   max-width: 100%;
@@ -192,6 +233,7 @@ input[type="submit"], .button{
   margin: 4em 0 0 0;
   text-align: center;
 }
+
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';

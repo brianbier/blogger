@@ -152,8 +152,7 @@ hr{
 }
 
 .about_me{
-  text-align: center;
-    background-color:#fcfcfc;
+    background-color:$white;
     border: 1px solid $border;
     // margin: 0.7rem 0;
     padding: 3.5rem;
@@ -225,7 +224,7 @@ textarea{
 
 input[type="submit"], .button{
   outline: none;
-  background: transparent;
+  background: $white;
   border: 2px solid $border;
   text-align: center;
   font-size: 1em;

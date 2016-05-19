@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 20160519000225) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "posts", force: :cascade do |t|
-    t.string   "title"
-    t.text     "content"
+    t.string   "title",      null: false
+    t.text     "content",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "slug"
@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 20160519000225) do
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true, using: :btree
 
   create_table "projects", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
+    t.string   "title",                 null: false
+    t.text     "description",           null: false
     t.string   "link"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false

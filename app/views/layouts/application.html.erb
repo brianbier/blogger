@@ -23,7 +23,7 @@
       <% if user_signed_in? %>
        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
       <% else %>
-        <%= link_to "Sign in", new_user_session_path %>
+
       <% end %>
     </nav>
   </header>
@@ -53,7 +53,7 @@
     </nav>
   </footer>
   <div class="below_footer">
-    <p class="power_by"><%= link_to "Proudly powered by Brian Bier.", "http://www.brianbier.co/" %></p>
+    <p class="power_by"><%= link_to "Proudly powered by Brian Bier. | ", "http://www.brianbier.co/" %>  <%= link_to " Sign in", new_user_session_path %></p>
   </div>
 </body>
 </html>

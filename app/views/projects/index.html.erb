@@ -1,5 +1,9 @@
-  <h1 id="page_title">Blogger Favorite Projects</h1>
-  
+  <h1 id="page_title">Recent Research Papers</h1>
+    <% if user_signed_in? %>
+      <div id="admin_links">
+        <%= link_to "new project", new_project_path %>
+      </div>
+    <% end %> 
   <div id="post_wrapper" class="skinny_wrapper">
     <% @projects.each do |project| %>
     <div class="post">
@@ -9,3 +13,5 @@
     </div>
     <% end %>
   </div>
+
+<%= will_paginate @projects %>

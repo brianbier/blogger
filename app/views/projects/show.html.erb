@@ -7,13 +7,13 @@
     <div id="content">
       <%= markdown @project.description %>   
       <div class="button_wrapper">
-        <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.title %></a>
+        <a href="<%= @project.document %>" class="project_button" target="_blank"> PDF FILE </a>
       </div>   
     </div>
     <% if user_signed_in? %>
       <div id="admin_links">
-        <%= link_to "edit Article", edit_post_path(@project) %>
-        <%= link_to "delete Article", post_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
+        <%= link_to "edit Article", edit_project_path(@project) %>
+        <%= link_to "delete Article", project_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
       </div>
     <% end %>
     <hr>
@@ -30,4 +30,6 @@
     </div>
 
     <hr>
+
+  <%= render 'disqus' %>
 </div>

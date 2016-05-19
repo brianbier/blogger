@@ -6,9 +6,11 @@
     </header>
     <div id="content">
       <%= markdown @project.description %>   
+      <% if @project.document_file_name %>
       <div class="button_wrapper">
-        <a href="<%= @project.document %>" class="project_button" target="_blank"> PDF FILE </a>
+        <a href="<%= @project.document %>" class="project_button" target="_blank"> VIEW <%= @project.document_file_name.match(/[^.]*$/)[0].upcase %> FILE </a>
       </div>   
+      <% end %>
     </div>
     <% if user_signed_in? %>
       <div id="admin_links">

@@ -24,7 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
-
+gem 'animate.css-rails'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem 'friendly_id', '~> 5.1'

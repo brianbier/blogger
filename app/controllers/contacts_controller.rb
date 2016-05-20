@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:error] = nil
     else
-      flash.now[:error] = "Cannot send message."
+      flash.now[:error] = "All fields must be completed."
       render 'new'
     end
   end

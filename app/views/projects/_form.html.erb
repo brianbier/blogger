@@ -1,6 +1,6 @@
 <%= form_for @project, html: { multipart: true } do |f| %>
   <% if @project.errors.any? %>
-    <h2><%= plurilize(@project.errors.count, "error") %> prevented this post from saving:</h2>
+    <h2><%= @project.errors.count %> prevented this post from saving:</h2>
     <ul>
       <% @project.errors.full_messages.each do |message| %>
           <li><%= message %></li>

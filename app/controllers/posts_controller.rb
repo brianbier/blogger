@@ -12,7 +12,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new post_params
-
     if @post.save
       redirect_to @post, notice: "Your article was successfully saved!"
     else

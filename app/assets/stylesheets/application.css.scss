@@ -273,18 +273,18 @@ input[type="submit"], .button{
     float: right;
     i{
       font-size: 1.6em;
-      color: $white;
+      color: $dark;
       padding-top: 1rem;
     }
   }
   #main_nav.active{
     display: block;
     width: 100%;
-    background-color: rgba(0,0,0, 0.3);
+    // background-color: rgba(255,255,255, 0.3);
     a{
       display: block;
       padding: 1em 0;
-      border-bottom: 1px solid $border;
+      border-bottom: 1px solid $dark;
       &:last-child {
         border-bottom: none;
       }
@@ -351,14 +351,14 @@ input[type="submit"], .button{
     float: right;
     i{
       font-size: 1.6em;
-      color: $white;
+      color: $dark;
       padding-top: 1rem;
     }
   }
   #main_nav.active{
     display: block;
     width: 100%;
-    background-color: rgba(0,0,0, 0.3);
+    // background-color: rgba(0,0,0, 0.3);
     a{
       display: block;
       padding: 1em 0;

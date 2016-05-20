@@ -15,16 +15,16 @@ $border: #E9E9E9;
   -o-background-size: cover;
   background-size: cover;
   }
-  .slogan{
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: 400;
-    color: $white;
-    padding: 8rem 10em;
-  }
-  .slogan:before{
-    content: "Exchanging & engaging ideas about economics, economic history & statistics"
-  }
+}
+.slogan{
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 400;
+  color: $white;
+  padding: 8% 10%;
+}
+.slogan:before{
+  content: "Exchanging & engaging ideas about economics, economic history & statistics"
 }
 #main_navigation {
   padding: 1.3em 5%;
@@ -63,5 +63,33 @@ $border: #E9E9E9;
       border-bottom: 2px solid $white;
       transition: 0.4s;
     }
+  }
+}
+
+@media only screen and (max-width: 788px){
+  .slogan.hide{
+    display: none;
+  }
+  .slogan:before{
+    content: "Exchanging & engaging ideas about economics, economic history & statistics";
+    text-align: center;
+    margin-top: -2em;
+    font-size:1.4em;
+    font-weight: 400;
+    color: $white;
+  }
+}
+@media only screen and (max-width: 488px){
+  .slogan.hide{
+    display: none;
+  }
+  .slogan{
+    text-align: left;
+  }
+  .slogan:before{
+    content: "Exchanging & engaging ideas about economics, economic history & statistics";
+    font-size:0.9em;
+    font-weight: 400;
+    color: $white;
   }
 }

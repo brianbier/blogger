@@ -10,13 +10,15 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag "background" if controller_name == "welcome" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="overlayer">
   <div class="background-image">
   <header id="main_navigation" class="clearfix">
     <%= link_to "Sasha Ostojic", root_path, class: "name" %>
-    <nav>
+    <a href="#" class="menu"><i class="fa fa-bars"></i></a>
+    <nav id="main_nav">
       <%= link_to "Articles", posts_path, class: "cool-link" %>
       <%= link_to "Projects", projects_path %>
       <%= link_to "Contact", new_contact_path %>
@@ -53,7 +55,7 @@
     </nav>
   </footer>
   <div class="below_footer">
-    <p class="power_by"><%= link_to "Proudly powered by Brian Bier. | ", "http://www.brianbier.co/" %>  <%= link_to " Sign in", new_user_session_path %></p>
+    <p class="power_by"><%= link_to "Proudly powered by Brian Bier.", "http://www.brianbier.co/" %><br><%= link_to " Sign in", new_user_session_path%></p>
   </div>
 </body>
 </html>

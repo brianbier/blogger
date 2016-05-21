@@ -1,7 +1,7 @@
 # What I am building?
-We are building a blogger site for multiple users
+I am building a blogger site for an economist.
 
-**Live Demo** [Blogger Site](https://glacial-spire-69935.herokuapp.com/)
+**Live** [Blogger Site](https://glacial-spire-69935.herokuapp.com/)
 
 ##Technologies/Gems
 - Ruby on Rails
@@ -14,14 +14,14 @@ We are building a blogger site for multiple users
 - [devise gem](https://github.com/plataformatec/devise)( Flexible and powerful authentication solution for Rails)
 
 ## Who I am building it for?
-We are building it for ourself but also the community as a whole to share what we learn. Show potential Employers what we have to offer
+I am building the site for economist who wants to share his knowledge and projects to the world.
 
 ## What features do I need to have?
 - Posts
      - create/edit/destroy
-     - Markdown
+     - Markdown text
      - Syntax Hightlighting
-     - Comments (Disqus) ?
+     - Comments (Disqus)/To maintain comments and for better security.
 
 - projects
      - Create/edit/Destroy
@@ -37,7 +37,7 @@ We are building it for ourself but also the community as a whole to share what w
 - As a user, I want to be able to edit and destroy post sot that I can manage my blog.
 - As a user, I want to be able to write posts in markdown format so that it is easy for me to write posts.
 - As a user, I want to be able to highlight the various syntax of close blocks that I share on my blog.
-- As a user, I want to show the visitors and potential employers examples of my work.
+- As a user, I want to show the visitors papers written.
 - As a user, I want to be able to have visitors contact me through a form on my site.
 - As a user, I want visitors to leave comments on my posts.
 
@@ -63,7 +63,7 @@ We are building it for ourself but also the community as a whole to share what w
      device manages this part.
 
 
-## Think about the pages I need in our app
+## Pages I need to build the app
 
 Home
 - Posts#index
@@ -71,3 +71,4 @@ Home
 - Projects#index
 - Projects#show
 - Contact
+- Device pages

@@ -1,9 +1,11 @@
 module ApplicationHelper
+  
   class HTMLWithPygments < Redcarpet::Render::HTML
     def block_code(code, language)
       Pygments.highlight(code, lexer: language)
     end
   end
+  
   def markdown(content)
     renderer = HTMLWithPygments.new(hard_wrap: true, filter_html: true)
     options = {
@@ -18,4 +20,5 @@ module ApplicationHelper
 
     Redcarpet::Markdown.new(renderer,options).render(content).html_safe
   end
+  
 end

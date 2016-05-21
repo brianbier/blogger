@@ -51,6 +51,14 @@
     margin: 3em auto;
   }
 }
+#content{
+  img{
+    width: 60%;
+    float: left;
+    padding-right:0.8em;
+    padding-top:0.8em;
+  }
+}
 
 #share_box{
   text-align: center;
@@ -161,6 +169,16 @@
   }
   hr{
     margin: 3em auto;
+  }
+}
+}
+@media only screen and (max-width: 488px){
+#content{
+  img{
+    width: 100%;
+    float: left;
+    padding-right:0.8em;
+    padding-top:0.8em;
   }
 }
 }

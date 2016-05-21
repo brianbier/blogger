@@ -1,38 +1,38 @@
-  <div id="post_show_content" class="skinny_wrapper wrapper_padding">
-    <header>
-      <p class="date"><%= @project.created_at.strftime("%A, %b %d %Y")%></p>
-      <h1><%= @project.title %></h1>
-      <hr>
-    </header>
-    <div id="content">
-      <%= markdown @project.description %>   
-      <% if @project.link %>
-      <div class="button_wrapper">
-        <a href="<%= @project.link %>" target="_blank"> Visit <%= @project.link %></a>
-  
-      </div>   
-      <% end %>
-    </div>
-    <% if user_signed_in? %>
-      <div id="admin_links">
-        <%= link_to "edit Article", edit_project_path(@project) %>
-        <%= link_to "delete Article", project_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
-      </div>
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+  <header>
+    <p class="date"><%= @project.created_at.strftime("%A, %b %d %Y")%></p>
+    <h1><%= @project.title %></h1>
+    <hr>
+  </header>
+  <div id="content">
+    <%= markdown @project.description %>   
+    <% if @project.link %>
+    <div class="button_wrapper">
+      <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.link %></a>
+
+    </div>   
     <% end %>
-    <hr>
+  </div>
+  <% if user_signed_in? %>
+  <div id="admin_links">
+    <%= link_to "edit Article", edit_project_path(@project) %>
+    <%= link_to "delete Article", project_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
+  </div>
+  <% end %>
+  <hr>
 
-    <div id="share_box">
-      <p>Share The Do List</p>
-      <!-- Twitter -->
-      <a onClick="javascript:window.open('http://twitter.com/share?text=<%= @project.title %> by @briansBier - &amp;url=<%= url_for([@project,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-twitter"></i></a>
-      <!-- Facebook -->
-      <a onClick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@project,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-facebook"></i></a>
+  <div id="share_box">
+    <p>Share The Do List</p>
+    <!-- Twitter -->
+    <a onClick="javascript:window.open('http://twitter.com/share?text=<%= @project.title %> by @briansBier - &amp;url=<%= url_for([@project,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-twitter"></i></a>
+    <!-- Facebook -->
+    <a onClick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@project,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-facebook"></i></a>
 
-      <!-- Google Plus -->
-      <a onClick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@project,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-    </div>
+    <!-- Google Plus -->
+    <a onClick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@project,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+  </div>
 
-    <hr>
+  <hr>
 
   <%= render 'disqus' %>
 </div>

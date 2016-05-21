@@ -13,68 +13,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<!-- Full Screen fadeIn -->
 <script>
-$('body').css('display','none');
-$('document').ready(function(){
-    $('body').fadeIn(1700);
-    $('a').on('click',function(event){
-      var thetarget = this.getAttribute('target')
-      if (thetarget != "_blank"){
-        var theherf = this.getAttribute('href')
-        event.preventDefault();
-        $('body').fadeOut(function(){
-          window.location=theherf
-        });
-      }
+    $('body').css('display','none');
+    $('document').ready(function(){
+      $('body').fadeIn(1700);
+      $('a').on('click',function(event){
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){
+          var theherf = this.getAttribute('href')
+          event.preventDefault();
+          $('body').fadeOut(function(){
+            window.location=theherf
+          });
+        }
+      });
     });
-});
-setTimeout(function(){
-    $('body').fadeIn();
-},1000)
-  
-</script>
-<div class="overlayer">
-  <div class="background-image">
-  <header id="main_navigation" class="clearfix">
-    <%= link_to "Sasha Ostojic", root_path, class: "name" %>
-    <button class="menu"><i class="fa fa-bars"></i></button>
-    <nav id="main_nav">
-      <%= link_to "Articles", posts_path, class: "cool-link" %>
-      <%= link_to "Projects", projects_path %>
-      <%= link_to "Contact", new_contact_path %>
-      <% if user_signed_in? %>
-       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-      <% else %>
+    setTimeout(function(){
+      $('body').fadeIn();
+    },1000)
 
-      <% end %>
-    </nav>
-  </header>
-    <p class="slogan slogan_padding"></p>
-  </div>
-</div>
-<!-- <div class="overlayer">
-  <div class="background-image">
-</div>
-</div> -->
+  </script>
+<!-- End Full Screen fadeIn -->
+
+  <div class="overlayer"><!-- Navigation bar -->
+    <div class="background-image">
+      <header id="main_navigation" class="clearfix">
+        <%= link_to "Sasha Ostojic", root_path, class: "name" %>
+        <button class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="main_nav">
+          <%= link_to "Articles", posts_path, class: "cool-link" %>
+          <%= link_to "Projects", projects_path %>
+          <%= link_to "Contact", new_contact_path %>
+          <% if user_signed_in? %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+          <% else %>
+
+          <% end %>
+        </nav>
+      </header>
+      <p class="slogan slogan_padding"></p>
+    </div>
+  </div><!-- End of Navigation Bar-->
+
 <% if notice %>
-  <p class="notice"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 <% elsif alert %>
-  <p class="alert"><%= alert %></p>
+<p class="alert"><%= alert %></p>
 <% end %>
 
 <%= yield %>
 
-  <footer id="main_footer">
-    <p class="copyright">&copy; 2016 Sasha Ostojic</p>
-    <nav>
-      <a href="#"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="#"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="/contacts/new"><i class="fa fa-paper-plane" aria-hidden="true"></i>
-      </a>
-    </nav>
-  </footer>
-  <div class="below_footer">
-    <p class="power_by"><%= link_to "Proudly powered by Brian Bier.", "http://www.brianbier.co/",target:"_blank" %><br><%= link_to " Sign in", new_user_session_path%></p>
-  </div>
+<footer id="main_footer">
+  <p class="copyright">&copy; 2016 Sasha Ostojic</p>
+  <nav>
+    <a href="#"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="#"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="/contacts/new"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+    </a>
+  </nav>
+</footer>
+
+<div class="below_footer">
+  <p class="power_by"><%= link_to "Proudly powered by Brian Bier.", "http://www.brianbier.co/",target:"_blank" %><br><%= link_to " Sign in", new_user_session_path%></p>
+</div>
+
 </body>
 </html>

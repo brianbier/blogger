@@ -1,17 +1,17 @@
-  <h1 id="page_title">Recent Research Papers</h1>
-    <% if user_signed_in? %>
-      <div id="admin_links">
-        <%= link_to "new project", new_project_path %>
-      </div>
-    <% end %> 
-  <div id="post_wrapper" class="skinny_wrapper">
-    <% @projects.each do |project| %>
-    <div class="post">
-      <p class="date"><%= project.created_at.strftime("%A, %b %d %Y")%></p>
-      <h2><%= link_to project.title, project %></h2>
-      <hr>
-    </div>
-    <% end %>
+<h1 id="page_title">Recent Research Papers</h1>
+<% if user_signed_in? %>
+<div id="admin_links">
+  <%= link_to "new project", new_project_path %>
+</div>
+<% end %> 
+<div id="post_wrapper" class="skinny_wrapper">
+  <% @projects.each do |project| %>
+  <div class="post">
+    <p class="date"><%= project.created_at.strftime("%A, %b %d %Y")%></p>
+    <h2><%= link_to project.title, project %></h2>
+    <hr>
   </div>
+  <% end %>
+</div>
 
 <%= will_paginate @projects %>

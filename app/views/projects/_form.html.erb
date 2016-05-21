@@ -1,30 +1,30 @@
 <%= form_for @project, html: { multipart: true } do |f| %>
-  <% if @project.errors.any? %>
-    <h2><%= @project.errors.count %> prevented this post from saving:</h2>
-    <ul>
-      <% @project.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-      <% end %>
-    </ul>
+<% if @project.errors.any? %>
+<h2><%= @project.errors.count %> prevented this post from saving:</h2>
+<ul>
+  <% @project.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
   <% end %>
+</ul>
+<% end %>
 
-  <%= f.label :title %><br>
-  <%= f.text_field :title %>
+<%= f.label :title %><br>
+<%= f.text_field :title %>
 
-  <br>
-  <br>
+<br>
+<br>
 
-  <%= f.label :description %><br>
-  <%= f.text_area :description %>
+<%= f.label :description %><br>
+<%= f.text_area :description %>
 
-  <br>
-  <br>
-  <%= f.label :link %><br>
-  <%= f.text_field :link %>
+<br>
+<br>
+<%= f.label :link %><br>
+<%= f.text_field :link %>
 
-  <br>
-  <br>
+<br>
+<br>
 
-  <%= f.submit %>
+<%= f.submit %>
 
 <% end %>

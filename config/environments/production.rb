@@ -77,12 +77,17 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  # Mailer Set up
   config.action_mailer.default_url_options = { host: 'https://glacial-spire-69935.herokuapp.com'}
 
   config.action_mailer.delivery_method = :smtp
+
   config.cache_classes = true
+  
   config.serve_static_assets = true
+  
   config.assets.compile = true
+  
   config.assets.digest = true
 
   ActionMailer::Base.smtp_settings = {

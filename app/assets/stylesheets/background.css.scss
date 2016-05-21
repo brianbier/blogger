@@ -4,6 +4,7 @@ $highlight: #6D7993;
 $white: #FFFFFF;
 $border: #E9E9E9;
 
+// --- WelcomePage Styling so that main image has different styles -- //
 .overlayer{
   opacity: 0.99;
   .background-image{
@@ -65,6 +66,7 @@ $border: #E9E9E9;
     }
   }
 }
+// --- Tablets/Ipads screen size ---//
 
 @media only screen and (max-width: 788px){
   .slogan.hide{
@@ -95,7 +97,6 @@ $border: #E9E9E9;
     #main_nav.active{
     display: block;
     width: 100%;
-    // background-color: rgba(0,0,0, 0.3);
     a{
       display: block;
       padding: 1em 0;
@@ -106,6 +107,8 @@ $border: #E9E9E9;
     }
   }
 }
+
+// --- Phone/mobile screen size ---//
 @media only screen and (max-width: 488px){
   .slogan.hide{
     display: none;

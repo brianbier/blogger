@@ -278,12 +278,15 @@ input[type="submit"], .button{
     }
   }
   .menu{
+    border:none;
     display: block;
     float: right;
+    background-color: transparent;
+    outline: none;
     i{
       font-size: 1.6em;
       color: $dark;
-      padding-top: 1rem;
+      // padding-top: 1rem;
     }
   }
   #main_nav.active{

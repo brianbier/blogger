@@ -29,7 +29,7 @@
   }
 }
 
-// ------------- Posts Show
+// --- Posts Show ---//
 
 #post_show_content{
     width:80%;
@@ -88,7 +88,7 @@
   }
 }
 
-// ------------- Pagination
+// --- Pagination -- //
 
 .pagination:before,
 .pagination:after {
@@ -131,7 +131,7 @@
     }
   }
 }
-
+// --- Tablets/Ipads screen size ---//
 @media only screen and (max-width: 788px){
 #post_wrapper{
   padding: 3em 0;

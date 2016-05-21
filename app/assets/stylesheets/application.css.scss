@@ -10,6 +10,7 @@ $navy: #6D7993;
 $metal: #9099A2;
 $paper: #F7F7F7;
 
+// --- Main application style ---//
 *{
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
@@ -206,7 +207,6 @@ hr{
       text-align: center;
       font-weight: 400;
       font-size: 0.87em;
-      // padding-top: em;
       margin-bottom: -5px;
       a{
         color: $border;
@@ -271,6 +271,7 @@ input[type="submit"], .button{
 @import 'pygments';
 @import 'animate';
 
+// -- Responsive design for Ipads/Tablets -- //
 @media only screen and (max-width: 788px){
   #main_nav {
     a{  
@@ -286,13 +287,12 @@ input[type="submit"], .button{
     i{
       font-size: 1.6em;
       color: $dark;
-      // padding-top: 1rem;
+
     }
   }
   #main_nav.active{
     display: block;
     width: 100%;
-    // background-color: rgba(255,255,255, 0.3);
     a{
       display: block;
       padding: 1em 0;
@@ -302,7 +302,8 @@ input[type="submit"], .button{
       }
     }
   }
-//------ Welcome responsive -----//
+
+//------ Welcome Page responsive -----//
 .col-1, .col-2, .col-3{
   float: left;
 }
@@ -351,6 +352,8 @@ input[type="submit"], .button{
 }
 }
 
+// --- Phone/mobile screen size ---//
+
 @media only screen and (max-width: 488px){
   #main_nav {
     a{  
@@ -370,7 +373,6 @@ input[type="submit"], .button{
   #main_nav.active{
     display: block;
     width: 100%;
-    // background-color: rgba(0,0,0, 0.3);
     a{
       display: block;
       padding: 1em 0;
@@ -380,15 +382,14 @@ input[type="submit"], .button{
       }
     }
   }
-//------ Welcome responsive -----//
+
+//------ Welcome Page responsive -----//
 .col-1, .col-2, .col-3{
   float: none;
 }
 
 .col-1{
-  // text-align: center;
   width: 85%;
-  // padding: 0 5% 0 2.5%;
   p{
     font-size: 1.2em;
   }
@@ -455,7 +456,6 @@ input[type="submit"], .button{
 .about_me{
     background-color:$white;
     border: 1px solid $border;
-    // margin: 0.7rem 0;
     padding: 2rem;
     p{
       font-size: 0.97em;

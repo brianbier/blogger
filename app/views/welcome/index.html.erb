@@ -1,25 +1,25 @@
 <div class="wrapper wrapper_padding clearfix">
-    <div class="col-1 about homepage_content">
-      <h2>Who this is for</h2>
-      <hr>
-      <p>Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.</p>
-    </div>
-    <div class="col-2 homepage_content">
-      <h2>Recent Articles</h2>
-      <hr>
-      <% @post.each do |post| %>
-      <h3><%= link_to post.title, post %></h3>
-      <p class="date"><%= post.created_at.strftime("%A, %b %d %Y")%></p>
-      <% end %>
-    </div>
-    <div class="col-3 homepage_content">
-      <h2>Research papers</h2>
-      <hr>
-      <% @projects.each do |project| %>
-      <h3><%= link_to project.title, project %></h3>
-      <p class="date"><%= project.created_at.strftime("%A, %b %d %Y")%></p>
-      <% end %>
-    </div>
+  <div class="col-1 about homepage_content">
+    <h2>Who this is for</h2>
+    <hr>
+    <p>Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.</p>
   </div>
+  <div class="col-2 homepage_content">
+    <h2>Recent Articles</h2>
+    <hr>
+    <% @post.each do |post| %>
+    <h3><%= link_to post.title, post %></h3>
+    <p class="date"><%= post.created_at.strftime("%A, %b %d %Y")%></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Research papers</h2>
+    <hr>
+    <% @projects.each do |project| %>
+    <h3><%= link_to project.title, project %></h3>
+    <p class="date"><%= project.created_at.strftime("%A, %b %d %Y")%></p>
+    <% end %>
+  </div>
+</div>
 <div class="wrapper wrapper_padding clearfix">
 </div>

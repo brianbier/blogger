@@ -1,34 +1,31 @@
-    <div class="wrapper wrapper_padding clearfix skinny_wrapper homepage_content about_me">
-    <!-- <div class="homepage_ about_me skinny_wrapper wrapper_padding"> -->
-      <h2>About Me</h2>
-      <hr>
-      <p>Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.</p>
-    </div>
+<div class="wrapper wrapper_padding clearfix skinny_wrapper homepage_content about_me"> <!-- Contact Content wrapper -->
+  <h2>About Me</h2>
+  <hr>
+  <p>Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.</p>
+</div>
 
-  <div class="skinny_wrapper wrapper_padding">
-<h1 id="page_title">Send me your inquiry!</h1>
+<div class="skinny_wrapper wrapper_padding">
+  <h1 id="page_title">Send me your inquiry!</h1>
   <% flash.each do |message_type, message| %>
-    <div class="alert alert-<%= message_type %>"><%= message %></div>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
   <% end %>
   <%= form_for @contact do |f| %>
 
-    <%= f.text_field :name, required: true, placeholder:"Name"%>
+  <%= f.text_field :name, required: true, placeholder:"Name"%>
 
-    <br>
+  <br>
 
+  <%= f.email_field :email, required: true, placeholder:"Email" %>
 
-    <%= f.email_field :email, required: true, placeholder:"Email" %>
+  <br>
 
-    <br>
-    
-    
-    <%= f.text_area :message, as: :text,required: true, placeholder:"Send me your message..." %>
+  <%= f.text_area :message, as: :text,required: true, placeholder:"Send me your message..." %>
 
-    <div class="hidden">
+  <div class="hidden">
     <%= f.label :nickname %><br>
     <%= f.text_field :nickname, hint: "leave blank" %>
-    </div>
-
-    <%= f.submit "Send Message ", class:"button" %>
-  <% end %>
   </div>
+
+  <%= f.submit "Send Message ", class:"button" %>
+  <% end %>
+</div><!-- End Content wrapper -->

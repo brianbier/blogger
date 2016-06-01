@@ -108,6 +108,11 @@ p, li{
 p, ul, ol{
   margin: 0 0 1.6em 0;
 }
+
+.my_image{
+  width: 50%;
+  margin-bottom: 1.5rem;
+}
 hr{
   width: 6em;
   display: block;
@@ -353,6 +358,10 @@ input[type="submit"], .button{
 // --- Phone/mobile screen size ---//
 
 @media only screen and (max-width: 488px){
+.my_image{
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
   #main_nav {
     a{  
       display: none;  

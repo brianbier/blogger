@@ -6,12 +6,6 @@
   </header>
   <div id="content">
     <%= markdown @project.description %>   
-    <% if @project.link %>
-    <div class="button_wrapper">
-      <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.link %></a>
-
-    </div>   
-    <% end %>
   </div>
   <% if user_signed_in? %>
   <div id="admin_links">

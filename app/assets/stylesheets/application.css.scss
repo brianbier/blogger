@@ -111,7 +111,9 @@ p, ul, ol{
 
 .my_image{
   width: 50%;
-  margin-bottom: 1.5rem;
+  margin: 0 1.5rem 1rem 1.5rem;
+  float: left;
+
 }
 hr{
   width: 6em;
@@ -326,8 +328,9 @@ input[type="submit"], .button{
 
 .homepage_content{
   h2{
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase; 
+    font-weight: bold;
   }
   h3{
     font-size: 0.99em;
@@ -348,6 +351,7 @@ input[type="submit"], .button{
   }
   p{
     margin: 0 0 .5em 0;
+    font-size: 0.96rem;
   }
 }
 .about{
@@ -433,6 +437,7 @@ input[type="submit"], .button{
   }
   p{
     margin: 0 0 .5em 0;
+    font-size: 0.9rem;
   }
 }
 .about{

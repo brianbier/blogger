@@ -10,6 +10,7 @@ $border: #E9E9E9;
   .background-image{
     background:url("central_park.jpeg") no-repeat center center;
     height: 35rem;
+      // height: 100vh;
     z-index: -1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,10 +23,13 @@ $border: #E9E9E9;
   font-size: 1.9em;
   font-weight: 400;
   color: $white;
+  font-size:2.8em;
   padding: 8% 10%;
+  margin-top: 2.5rem;
+  letter-spacing: 3px;
 }
 .slogan:before{
-  content: "Exchanging & engaging ideas about economics, economic history & statistics"
+  content: "Digestible Data-Driven Insights";
 }
 #main_navigation {
   padding: 1.3em 5%;
@@ -72,13 +76,15 @@ $border: #E9E9E9;
   .slogan.hide{
     display: none;
   }
+
   .slogan:before{
-    content: "Exchanging & engaging ideas about economics, economic history & statistics";
+    content: "Digestible Data-Driven Insights";
     text-align: center;
     margin-top: -2em;
-    font-size:1.4em;
+    font-size:0.7em;
     font-weight: 400;
     color: $white;
+    letter-spacing: 3px;
   }
     #main_nav {
     a{  
@@ -114,12 +120,13 @@ $border: #E9E9E9;
     display: none;
   }
   .slogan{
-    text-align: left;
+    text-align: center;
   }
   .slogan:before{
-    content: "Exchanging & engaging ideas about economics, economic history & statistics";
-    font-size:0.9em;
+    content: "Digestible Data-Driven Insights";
+    font-size:0.5em;
     font-weight: 400;
     color: $white;
+    letter-spacing: 3px;
   }
 }

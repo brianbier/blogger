@@ -1,11 +1,28 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-1 about homepage_content">
-    <h2>Who this is for</h2>
+    <h2>Real World Solutions and Implications</h2>
     <hr>
-    <p>Shoreditch try-hard occupy, narwhal chartreuse paleo master cleanse. Lumbersexual next level lomo, drinking vinegar mlkshk celiac craft beer kitsch affogato street art actually viral heirloom. Art party food truck single-origin coffee chia, seitan listicle sriracha fingerstache actually shabby chic ennui chicharrones. Messenger bag chicharrones green juice microdosing, keffiyeh trust fund sustainable yr seitan 8-bit sriracha tumblr. Pork belly leggings blog art party kogi XOXO. Squid cray messenger bag polaroid. Schlitz ugh four dollar toast, fap affogato vice blue bottle cornhole brunch intelligentsia irony pickled disrupt.</p>
+    <p>
+    Ideas seldom have real world implications. Yet all products, strategies, and solutions start out as ideas.By presenting ideas the right way, as digestible, data-driven insights, ideas can spark conversations and collaborations to deliver real world solutions and create a positive impact in a variety of topics.
+    <p>
+    <div class="heading">Why digestible?
+    </div>
+    <p>
+    In today’s nonstop world, few have the time and dedication to sit down and read dense articles. In addition to this, readers are continuously bombarded by content at every turn. The purpose of this site is to address just that. All articles will contain content presented in a digestible manner that should require approximately five minutes for a reader to consume. No burying the lead here! Should anything peak your interest reach out to the author if you would like to learn more or collaborate on the topic.
+    </p>
+    <div class="heading">Why Data-Driven?
+    </div>
+    <p>
+    Because Data==Fun! (Stata joke) Besides becoming a notorious buzzword, data can serve as evidence to support or disprove theory to those open-minded enough. However, data can also be used to introduce new issues to those unfamiliar or provide the opportunity to re-examine an issue that otherwise may have become stale.
+    </p>
+    <div class="heading">Why Insights?
+    </div>
+    <p>
+    By definition, an insight is the capacity to gain an accurate and deep intuitive understanding of a person or thing. This differs slightly but significantly from an opinion. By approaching a topic or issue from a new perspective (even if it is not our own), we can learn more about the issue at hand. Articles displayed here may not necessarily represent the views of the author, but rather one of many perspectives on the particular issue, with the support of data.
+    </p>
   </div>
   <div class="col-2 homepage_content">
-    <h2>Recent Articles</h2>
+    <h2>Recent Policy</h2>
     <hr>
     <% @post.each do |post| %>
     <h3><%= link_to post.title, post %></h3>
@@ -13,7 +30,7 @@
     <% end %>
   </div>
   <div class="col-3 homepage_content">
-    <h2>Research papers</h2>
+    <h2>Sports</h2>
     <hr>
     <% @projects.each do |project| %>
     <h3><%= link_to project.title, project %></h3>

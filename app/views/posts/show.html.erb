@@ -17,12 +17,16 @@
   <hr>
     <p>Share The Do List</p>
     <!-- Twitter -->
-    <a onClick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @briansBier - &amp;url=<%= url_for([@post,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-twitter"></i></a>
+   <a class="twitter customer share" href="http://twitter.com/share?text=<%= @post.title %> by @SashaEconInc - &amp;url=http://localhost:3000/<%= url_for([@post]) %>" title="Twitter share" target="_blank"><i class="fa fa-twitter"></i></a>
+
     <!-- Facebook -->
-    <a onClick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-facebook"></i></a>
+    <a class="facebook customer share" href="http://www.facebook.com/sharer.php?u=<%= url_for([@post,{only_path: false}]) %>" title="Facebook share" target="_blank"><i class="fa fa-facebook"></i></a>
 
     <!-- Google Plus -->
-    <a onClick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post,{only_path: false}]) %>', '_blank','width=800,height=500,top=200,left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+    <a class="google_plus customer share" href="https://plus.google.com/share?url=<%= url_for([@post,{only_path: false}]) %>" title="Google Plus Share" target="_blank"><i class="fa fa-google-plus"></i></a>
+
+    <!-- Linkedin -->
+    <a class="linkedin customer share" href="http://www.linkedin.com/shareArticle?mini=true&url=<%= url_for([@post,{only_path: false}]) %>" title="linkedin Share" target="_blank"><i class="fa fa-linkedin"></i></a>
   </div>
 
   <hr>

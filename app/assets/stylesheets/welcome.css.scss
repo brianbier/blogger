@@ -1,4 +1,6 @@
 $white: #FFFFFF;
+$dark: #424652;
+$light: #9a9da4;
 .col-1, .col-2, .col-3{
   float: left;
 }
@@ -15,7 +17,9 @@ $white: #FFFFFF;
 
   .heading{
     font-weight: bold;
-    margin: 1rem 0 0.4rem 0;
+    margin: 1rem 0 0.4rem 0; 
+    font-size: 1.2rem;
+    color: $dark
   }
 
 .homepage_content{

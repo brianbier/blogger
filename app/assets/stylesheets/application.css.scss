@@ -229,9 +229,6 @@ input[type="text"], input[type="email"], input[type="password"], textarea{
   margin: .5em 0 2em 0;
   &:focus{
   border-bottom: 2px solid $highlight;
-  box-shadow: 0 0;
-  outline: 0;
-  transition: border-bottom 1s;
   }
 }
 

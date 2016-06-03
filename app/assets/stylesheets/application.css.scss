@@ -33,6 +33,13 @@ body{
   width: 90%;
   margin: 0 auto;
 }
+.banner{
+  background-color: $light;
+  margin-top: -28px;
+  h1{
+    color: $white;
+  }
+}
 
 .skinny_wrapper{
   width:80%;

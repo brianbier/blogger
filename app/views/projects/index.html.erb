@@ -8,11 +8,13 @@
 <% end %> 
 <div id="post_wrapper" class="skinny_wrapper">
   <% @projects.each do |project| %>
+    <%= link_to(project) do %>
   <div class="post">
+    <h2><%= project.title %></h2>
     <p class="date"><%= project.created_at.strftime("%A, %b %d %Y")%></p>
-    <h2><%= link_to project.title, project %></h2>
     <hr>
   </div>
+  <% end %>
   <% end %>
 </div>
 

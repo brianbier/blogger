@@ -315,16 +315,9 @@ input[type="submit"], .button{
 // -- Responsive design for Ipads/Tablets -- //
 @media only screen and (max-width: 788px){
   #main_nav {
-    display: block;
-    width: 100%;
-    a{
-      display: block;
-      padding: 1em 0;
-      border-bottom: 1px solid $dark;
-      &:last-child {
-        border-bottom: none;
-      }
-    }
+  a{
+    display: none;
+  }
   }
   .menu{
     border:none;
@@ -338,18 +331,18 @@ input[type="submit"], .button{
 
     }
   }
-  // #main_nav.active{
-  //   display: block;
-  //   width: 100%;
-  //   a{
-  //     display: block;
-  //     padding: 1em 0;
-  //     border-bottom: 1px solid $dark;
-  //     &:last-child {
-  //       border-bottom: none;
-  //     }
-  //   }
-  // }
+  #main_nav.active{
+    display: block;
+    width: 100%;
+    a{
+      display: block;
+      padding: 1em 0;
+      border-bottom: 1px solid $dark;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
 
 //------ Welcome Page responsive -----//
 .col-1, .col-2, .col-3{
@@ -410,16 +403,10 @@ input[type="submit"], .button{
   margin-bottom: 1.5rem;
 }
   #main_nav {
-    display: block;
-    width: 100%;
-    a{
-      display: block;
-      padding: 1em 0;
-      border-bottom: 1px solid $dark;
-      &:last-child {
-        border-bottom: none;
-      }
-    }
+  a{
+    display: none;
+    font-size: 0.98;
+  }
   }
   .menu{
     display: block;
@@ -430,18 +417,18 @@ input[type="submit"], .button{
       padding-top: 1rem;
     }
   }
-  // #main_nav.active{
-  //   display: block;
-  //   width: 100%;
-  //   a{
-  //     display: block;
-  //     padding: 1em 0;
-  //     border-bottom: 1px solid $border;
-  //     &:last-child {
-  //       border-bottom: none;
-  //     }
-  //   }
-  // }
+  #main_nav.active{
+    display: block;
+    width: 100%;
+    a{
+      display: block;
+      padding: 1em 0;
+      border-bottom: 1px solid $border;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
 
 //------ Welcome Page responsive -----//
 .col-1, .col-2, .col-3{

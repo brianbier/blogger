@@ -2,7 +2,9 @@ $(document).ready(function(){
   //--- hamburger menu set up ---//
   $('.menu').on('click', function(e){
     e.stopPropagation();
-    $('#main_nav').slideToggle();
+    $('#main_nav').toggleClass('active');
+    // $('.slogan').toggleClass('hide');
+    // $('#main_nav').slideToggle();
   });
 
 });

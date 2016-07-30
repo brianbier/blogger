@@ -34,6 +34,7 @@ $border: #E9E9E9;
 #main_navigation {
   padding: 1.3em 5%;
   border-bottom: 1px solid $border;
+  visibility: visible;
   .name {
     font-weight: 700;
     font-size: 1em;
@@ -86,11 +87,6 @@ $border: #E9E9E9;
     color: $white;
     letter-spacing: 3px;
   }
-    #main_nav {
-    a{  
-      display: none;  
-    }
-  }
   .menu{
     display: block;
     float: right;
@@ -100,8 +96,8 @@ $border: #E9E9E9;
       padding-top: 1rem;
     }
   }
-    #main_nav.active{
-    display: block;
+    #main_nav{
+    display: none;
     width: 100%;
     a{
       display: block;

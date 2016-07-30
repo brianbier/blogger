@@ -12,4 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require waypoints.min
+//= require popup
+//= require main
+//= require particles.min
+//= require stats
+//= require app

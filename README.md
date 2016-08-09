@@ -1,7 +1,7 @@
 # What I am building?
 I am building a blogger site for an economist.
 
-**Live** [Blogger Site](https://glacial-spire-69935.herokuapp.com/)
+**Live** [www.sashaOstojic.com](https://glacial-spire-69935.herokuapp.com/)
 
 ##Technologies/Gems
 - Ruby on Rails

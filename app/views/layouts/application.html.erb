@@ -62,7 +62,7 @@
 <%= yield %>
 
 <footer id="main_footer">
-  <p class="copyright">&copy; 2016 Sasha Ostojic</p>
+  <p class="copyright">&copy; <%= Time.now.strftime("%Y") %> Sasha Ostojic</p>
   <nav>
     <a href="https://www.linkedin.com/in/sashaostojic"target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     <a href="https://twitter.com/sashaeconinc"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -71,9 +71,12 @@
   </nav>
 </footer>
 
-<div class="below_footer">
-  <p class="power_by"><%= link_to "Proudly powered by Brian Bier.", "http://www.brianbier.co/",target:"_blank" %><br><%= link_to " Sign in", new_user_session_path%></p>
-</div>
+      <% if !user_signed_in? %>
+      <div class="below_footer">
+        <p class="power_by"><%= link_to "Proudly powered by www.brianbier.co", "http://www.brianbier.co/",target:"_blank" %><br><%= link_to " Sign in", new_user_session_path%></p>
+            
+      </div>
+      <% end %>
 
 </body>
 </html>

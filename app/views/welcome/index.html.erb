@@ -1,5 +1,5 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="col-1 about homepage_content wp1">
+  <div class="col-1 about homepage_content">
     <h2>Real World Solutions and Implications</h2>
     <hr>
     <p>
@@ -21,7 +21,7 @@
     By definition, an insight is the capacity to gain an accurate and deep intuitive understanding of a person or thing. This differs slightly but significantly from an opinion. By approaching a topic or issue from a new perspective (even if it is not our own), we can learn more about the issue at hand. Articles displayed here may not necessarily represent the views of the author, but rather one of many perspectives on the particular issue, with the support of data.
     </p>
   </div>
-  <div class="col-2 homepage_content wp2">
+  <div class="col-2 homepage_content">
     <h2>Recent Policy</h2>
     <hr>
         <% @post.each do |post| %>
@@ -29,7 +29,7 @@
         <p class="date"><%= post.created_at.strftime("%A, %b %d %Y")%></p>
         <% end %>
   </div>
-  <div class="col-3 homepage_content wp3">
+  <div class="col-3 homepage_content">
     <h2>Recent Sports</h2>
     <hr>
     <% @projects.each do |project| %>
